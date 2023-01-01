@@ -20,13 +20,13 @@ body{
  ul li{
     display:inline-block;
     line-height: 50px;
-    margin: 0 5px;
+    
     
 }
  li a{
     color: rgb(224, 224, 6);
     font-size: 17px;
-    padding: 3px 3px;
+    padding: 1px 1px;
     text-transform: uppercase;
     display:block;
     text-align: left;
