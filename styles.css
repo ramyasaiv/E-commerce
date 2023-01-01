@@ -101,7 +101,7 @@ h2{
    cursor:pointer;
 }
 .btn:hover{
-  background-color:goldenrod;
+  background-color: gold;
 .flexbox{
     display: flex;
     justify-content: center;
