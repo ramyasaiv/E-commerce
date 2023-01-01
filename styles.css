@@ -52,7 +52,8 @@ li a:hover{
 font-weight: bold;
 }
 #about img{
-    text-align: center;
+   margin-right: 280px;
+    margin-left: 280px;
     border-radius:50px;
 }
 table{
