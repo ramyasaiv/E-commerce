@@ -37,7 +37,7 @@ body{
 li a:hover{
     background-color: antiquewhite;
     border-radius: 15px;
-    padding: 3px 3px;
+    padding: 1px 1px;
     color: blue;
 }
 #about p{
