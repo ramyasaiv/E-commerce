@@ -1,0 +1,144 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>our accounts</title>
+    
+    
+</head>
+
+<body>
+
+
+    <div class="container">
+        
+    </div>
+
+    <!-- Account-Page -->
+
+    <div class="account-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img src="C:\Web_Development\bibilophile\bb image logo.jpg" width="50%">
+                </div>
+                <div class="col-2">
+                    <div class="form-container">
+                        <div class="form-btn">
+                            <span onclick="login()">Login</span>
+                            <span onclick="register()">Register</span>
+                            <hr id="Indicator">
+                        </div>
+
+                        <form id="LoginForm">
+                            <input type="text" placeholder="Username">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Login</button>
+                            <a href="">Forgot password</a>
+                        </form>
+
+                        <form id="RegForm">
+                            <input type="text" placeholder="Username">
+                            <input type="email" placeholder="Email">
+                            <input type="password" placeholder="Password">
+                            <button type="submit" class="btn">Register</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="C:\Users\PANDU\Downloads\Ecommerce-website-main\Ecommerce-website-main\img\play-store.png">
+                        <img src="C:\Users\PANDU\Downloads\Ecommerce-website-main\Ecommerce-website-main\img\app-store.png">
+
+                    </div>
+                </div>
+                
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                
+                   <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=100086929164848" target="_blank"><img src="C:\Web_Development\bibilophile\fb.png"></a>
+                    <a href="https://www.instagram.com/calc.technologies/" target="_blank"> <img src="C:\Web_Development\bibilophile\in.png"></a>
+
+                    <a href="https://www.youtube.com/@calctechnologies" target="_blank"><img src="C:\Web_Development\bibilophile\youtube.png"></a>
+                    <a href="https://twitter.com/calctechsocial" target="_blank"><img src="C:\Web_Development\bibilophile\twitter.png"></a>
+                   </div>
+
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright @2022 - RAMYA VENKATAGIRI | Bibilophile</p>
+        </div>
+    </div>
+
+    <!-- js for toggle menu -->
+
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+
+    <!-- js for toggle form -->
+
+    <script>
+        var LoginForm = document.getElementById("LoginForm");
+        var RegForm = document.getElementById("RegForm");
+        var Indicator = document.getElementById("Indicator");
+
+        function register(){
+
+            RegForm.style.transform = "translateX(0px)";
+            LoginForm.style.transform = "translateX(0px)";
+            Indicator.style.transform = "translateX(100px)";
+        }
+
+        function login(){
+            
+            RegForm.style.transform = "translateX(300px)";
+            LoginForm.style.transform = "translateX(300px)";
+            Indicator.style.transform = "translateX(0px)";
+        }
+
+    </script>
+
+</body>
+
+</html>
