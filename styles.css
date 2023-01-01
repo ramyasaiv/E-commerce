@@ -98,6 +98,7 @@ h2{
     border: none;
     padding: 4px;
     border-radius: 10px;
+   cursor:pointer;
 }
 .flexbox{
     display: flex;
